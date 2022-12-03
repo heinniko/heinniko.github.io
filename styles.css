@@ -9,6 +9,7 @@
     margin: auto;
     background-color: #d7d7d7;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-size: x-large;
 }
 
 .overview {
@@ -19,16 +20,18 @@
     margin: auto;
     background-color: #d7d7d7;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-size: x-large;
 }
 
 .display-box {
 font-family: 'Orbitron', sans-serif;
-background-color: #fdfcff;
+background-color: white;
 border: solid black 0.5px;
 color: black;
 border-radius: 5px;
-height: 65%;
+height: 100%;
 outline: none;
+font-size: x-large;
 }
 
 #btn {
@@ -38,12 +41,13 @@ background-color: #008efb;
 input[type=button] {
 font-family: 'Orbitron', sans-serif;
 background-color: #fac03a;
-color: white;
+color: black;
 border: solid black 0.5px;
 width: 100%;
 border-radius: 5px;
-height: 70%;
+height: 100%;
 outline: none;
+font-size: x-large;
 }
 
 input:active[type=button] {
