@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<title>Kasse Weihnachtsmarkt</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<table class="calculator">
+    <tr>
+        <th colspan="6">Artikel</th>
+    </tr>
+<!-- display() function displays the value of clicked button -->
+<tr>
+    <td colspan="6"> <input type="button" value="Pfand" onclick="display('+3');overview('Pfand')" /> </td>
+</tr>
+<tr>
+    <td colspan="3"> <input type="button" value="Punsch" onclick="display('+2.5');overview('Punsch')" /> </td>
+    <td colspan="3"> <input type="button" value="Bowle" onclick="display('+3.5');overview('Bowle')" /> </td>
+</tr>
+<tr>
+    <td colspan="6"> <input type="button" value="Halb - Halb" onclick="display('+3');overview('Halb - Halb')" /> </td>
+</tr>
+<tr>
+    <td colspan="3"> <input type="button" value="Baumkuchen" onclick="display('+5.5');overview('Baumkuchen')" /> </td>
+    <td colspan="3"> <input type="button" value="Langos" onclick="display('+4');overview('Langos')" /> </td>
+</tr>
+<tr>
+    <td colspan="6"> <input type="button" value="Pfand zurück" onclick="display('-3');overview('Pfand zurück')" /> </td>
+</tr>
+<tr>
+    <!-- clearScreen() function clears all the values -->
+    <td colspan="3"> <input type="button" value="Löschen" onclick="clearScreen()" id="btn" /> </td>
+    <!-- calculate() function evaluates the mathematical expression -->
+    <td colspan="3"> <input type="button" value="Berechnen" onclick="calculate()" id="btn" /> </td>
+</tr>
+<tr>
+    <td colspan="6" width="100%"> <input class="display-box" type="text" id="result" disabled /> </td>
+</tr>
+</table>
+
+<table class="overview">
+    <tr>
+        <th colspan="6">Übersicht</th>
+    </tr>
+    <tr>
+        <td colspan="4">Pfand</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Pfand" disabled /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">Punsch</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Punsch" disabled /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">Bowle</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Bowle" disabled /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">Halb - Halb</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Halb - Halb" disabled /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">Baumkuchen</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Baumkuchen" disabled /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">Langos</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Langos" disabled /> </td>
+    </tr>
+    <tr>
+        <td colspan="4">Pfand zurück</td>
+        <td colspan="2"> <input class="display-box" type="text" id="Pfand zurück" disabled /> </td>
+    </tr>
+
+
+</table>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
